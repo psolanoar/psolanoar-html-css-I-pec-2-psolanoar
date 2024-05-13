@@ -1,0 +1,74 @@
+// Responsive measures 
+$tablet-min-devices: 481px;
+$tablet-max-devices: 1024px;
+$desktop-min-devices: 1025px;
+
+// Colors
+$color-one: #755656;
+$color-two: #fafafa;
+$color-three:#292525;
+$color-four: #292525;
+$color-five: #5c5c5c;
+$color-six: #b6b6b6;
+$color-seven: #f3f3ed;
+$color-eight: #ddb852;
+$color-nine: #7e600f;
+$color-ten: #d8c38a;
+
+// Fonts styles
+$font-family-text: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Fonts sizes
+$font-size-title: 64px;
+$font-size-title-subpage: 20px;
+$font-size-titles: 18px;
+$font-size-text: 14px;
+$font-size-text-footer: 12px;
+
+// Values
+$value-min-ten: -10%;
+$value-zero: 0%;
+$value-one: 1%;
+$value-two: 2%;
+$value-three: 3%;
+$value-five: 5%;
+$value-ten: 10%;
+$value-fifteen: 15%;
+$value-twelve: 20%;
+$value-forty: 40%;
+$value-hundred: 100%;
+$value-one-hundred-ten: 110%;
+$margin-top-footer-rem: 1rem;
+
+// Variables
+$value-none: none;
+$value-inline: inline;
+$value-flex: flex;
+$value-center: center;
+$value-absolute: absolute;
+$value-auto: auto;
+$value-cover: cover;
+$value-grid: grid;
+$value-solid: solid;
+$value-wrap: wrap;
+$value-justify: justify;
+$value-fixed: fixed;
+
+// Footer
+$one-half-rem: 1.5rem;
+
+// Pixel values
+$value-thirty-px: 30px;
+$eight-hundred-px: 800px;
+$hundred-px: 100px;
+
+// Border sizes
+$border-size: 10px;
+
+// Grid
+$grid-auto-rows: minmax(100px, auto);
+$grid-template-columns: repeat(3, 1fr);
+
+
+// styles and display
+$line-height : 2.5rem;

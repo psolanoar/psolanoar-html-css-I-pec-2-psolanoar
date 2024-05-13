@@ -1,0 +1,212 @@
+* {
+  font-family: $font-family-text;
+  font-size: $font-size-text;
+  position: $value-flex;
+}
+
+.header {
+  padding: $value-one;
+
+  .header__navigation__menu {
+    color: $color-one;
+  }
+
+  .header__navigation__menu--options {
+    list-style-type: $value-none;
+    text-align: $value-center;
+  }
+
+  .header__navigation__menu--options--option {
+    padding: $value-three;
+  }
+
+  .header__navigation__menu--options--option--link {
+    text-decoration: $value-none;
+    color: $color-three;
+  }
+
+  .header__navigation__menu--options--option--link:hover {
+    color: $color-nine;
+  }
+}
+
+.main__home { 
+  color: $color-three;
+  background-image: url("../images/pexels-aleksandar-pasaric-2078076.jpg");
+  background-size: $value-cover;
+  width: $value-auto;
+  height: $eight-hundred-px;
+  margin: $value-zero;
+  padding-top: $value-two;
+
+  .main__home__title--style {
+    font-size: $font-size-title;
+    text-align: $value-center;
+    padding-top: $value-fifteen;
+    color: $color-eight;
+  }
+}
+
+.main { 
+  color: $color-three;
+  background-color: $color-two;
+  margin: $value-zero;
+
+  .main__title--style {
+    font-size: $font-size-title-subpage;
+    text-align: $value-center;
+    padding-top: $value-three;
+    padding-bottom: $value-one;
+  }
+
+  .main__container--subtitle {
+    padding-left: $value-ten;
+    padding-right: $value-ten;
+  }
+
+  .main__container--subtitle--link {
+    color: $color-three;
+    text-decoration: $value-none;
+  }
+
+  .main__container--subtitle--link:hover {
+    color: $color-eight;
+  }
+
+  .main__container {  
+    display: $value-flex;
+    flex-wrap: $value-wrap;
+    margin: $value-five;
+    padding: $value-zero;
+
+    .main__container__modul--flex {  
+      margin: $value-two;
+      padding: $value-zero;
+      width: $value-forty;
+
+      .main__container__modul--flex--column  {  
+        list-style-type: $value-none;
+        text-decoration: $value-none;
+        line-height: $line-height;
+        text-align: $value-justify;
+      }
+    }
+  }
+
+  .main__container__frame {
+    margin: $value-zero;
+    padding: $value-one;
+    padding-top: $value-two;
+    padding-bottom: $value-two;
+    width: $value-hundred;
+    background-color: $color-seven;
+  
+    .main__container__frame--one--column  {  
+      list-style-type: $value-none;
+      text-decoration: $value-none;
+      line-height: $line-height;
+      margin: $value-zero;
+      padding-left: $value-ten;
+      padding-right: $value-ten;
+    }
+  }
+
+  .main__container--link {
+    color: $color-nine;
+    text-decoration: $value-none;
+  }
+}
+
+.footer {
+  margin-top: $margin-top-footer-rem;
+  font-size: $font-size-text-footer;
+  text-align: $value-center;
+  padding-top: $value-five;
+  padding-bottom: $value-five;
+  background-color: $color-four;
+  color: $color-two;
+  bottom: $value-zero;
+  width: $value-hundred;
+  
+  .footer--link {
+    list-style-type: $value-none;
+    text-decoration: $value-none;
+    padding: $value-one;
+    color: $color-ten;
+  }
+}
+
+.element--fixed {
+  position: $value-fixed;
+}
+
+.element--centered--text {
+  text-align: $value-center;
+}
+
+.element--contrast {
+  background-color: $color-ten;
+}
+
+iframe, img {
+  max-width: $value-hundred;
+  height: $value-auto;
+}
+
+h2 {
+  padding-top: $value-three;
+}
+
+button {
+  background-color: $color-ten;
+  border: $value-none;
+  color: $color-two;
+  padding: $value-one;
+}
+
+button:hover {   
+  background-color: $color-nine;
+}
+
+input {
+  border: $value-none;
+  padding: $value-one;
+}
+
+/* media query styles adapted for tablets and desktops*/
+@media (min-width: $tablet-min-devices) {
+  .header__navigation__menu--options {
+    text-align: $value-center;
+
+    .header__navigation__menu--options--option {
+      display: $value-inline;
+    }
+  }
+  
+  .footer {
+    padding-bottom: $value-three;
+  }
+}
+
+/* media query for tablets */
+@media (min-width: $tablet-min-devices) and (max-width: $tablet-max-devices) {
+  .home__title--style {
+    padding-top: $value-twelve;
+  }
+}
+
+/* media query for desktops */
+@media (min-width: $desktop-min-devices) {
+  .home__title--style {
+    padding-top: $value-ten;
+  }
+  
+  .header__navigation__menu--options--option {
+    padding: $value-one;
+  }
+}
+
+
+.clip {
+  clip-path: polygon(25% 0%, 25% 0%, 100% 50%, 25% 100%, 25% 100%, 0% 50%);
+}
