@@ -29,7 +29,7 @@
     color: $color-nine;
   }
 }
-
+  
 .main__home { 
   color: $color-three;
   background-image: url("../images/pexels-aleksandar-pasaric-2078076.jpg");
@@ -38,12 +38,18 @@
   height: $eight-hundred-px;
   margin: $value-zero;
   padding-top: $value-two;
+  align-items: $value-center;
+  display: $value-flex;
+  justify-content: $value-center;
 
   .main__home__title--style {
     font-size: $font-size-title;
     text-align: $value-center;
     padding-top: $value-fifteen;
     color: $color-eight;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: initial;
   }
 }
 
@@ -206,7 +212,35 @@ input {
   }
 }
 
+.clip--animation--songs {
+  clip-path: circle($value-seventy-five);
+  height: $value-thirty-vh;
+  width: $value-seventy-vh;
+  transition: clip-path $value-one-with-five;
+}
 
-.clip {
-  clip-path: polygon(25% 0%, 25% 0%, 100% 50%, 25% 100%, 25% 100%, 0% 50%);
+.clip--animation--songs:hover {
+clip-path: circle($value-five);
+}
+
+@keyframes circle {
+  0% { 
+    clip-path: circle($value-seventy-five); 
+  }
+
+  100% { 
+    clip-path: circle($value-fifty-five); 
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: $value-hundred;
+    width: $value-three-hundred;
+  }
+
+  to {
+    margin-left: $value-zero;
+    width: $value-hundred;
+  }
 }
