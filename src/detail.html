@@ -8,6 +8,11 @@
   <body class="main">
     <main>
       <header class="header element--contrast">
+        <picture>
+          <source media="(max-width: 480px)" srcset="./assets/images/logo-50.png" />
+          <source media="(min-width: 481px)" srcset="./assets/images/logo-100.png" />
+          <img src="./assets/images/logo-100.png" alt="Guns N Roses" />
+        </picture>
         <nav class="header__navigation__menu">
           <ul class="header__navigation__menu--options">
             <li class="header__navigation__menu--options--option"><a class="header__navigation__menu--options--option--link" href="index.html">Portada</a></li>
@@ -20,6 +25,13 @@
 
       <h1 class="main__title--style">Conciertos que marcaron la historia del rock</h1>
       <div class="main__container">
+
+        <picture>
+          <source media="(max-width: 799px)" srcset="./assets/images/pexels-stephendn-65718-800.jpg" />
+          <source media="(min-width: 800px)" srcset="./assets/images/pexels-stephendn-65718-400.jpg" />
+          <img src="./assets/images/pexels-stephendn-65718-800.jpg" alt="Guitarras" />
+        </picture>
+        
         <div class="main__container__modul--flex">
           <h2>Primera actuación</h2>
           <article class="main__container__modul--flex--column">
@@ -89,7 +101,20 @@
       </div>
     </main>
     
-    <footer class="footer">
+    <footer class="footer element--fixed">
+      <picture>
+        <source media="(max-width: 480px)" srcset="./assets/images/logo-50.png" />
+        <source media="(min-width: 481px)" srcset="./assets/images/logo-100.png" />
+        <img src="./assets/images/logo-100.png" alt="Guns N Roses" />
+      </picture>
+      <nav class="header__navigation__menu">
+        <div class="header__navigation__menu--options">
+          <div class="header__navigation__menu--options--option"><a class="header__navigation__menu--options--option--link footer--link" href="category.html">Categoría</a></div>
+          <div class="header__navigation__menu--options--option"><a class="header__navigation__menu--options--option--link footer--link" href="presentation.html">Presentación</a></div>
+          <div class="header__navigation__menu--options--option"><a class="header__navigation__menu--options--option--link footer--link" href="links.html">Enlaces</a></div>
+          <div class="header__navigation__menu--options--option"><a class="header__navigation__menu--options--option--link footer--link" href="detail.html">Detalle</a></div>
+        </div>
+      </nav>
       <p>Síguenos en 
         <a class="footer--link" href="https://www.facebook.com/"><i class="footer--icon fa-brands fa-facebook"></i></a>
         <a class="footer--link" href="https://www.instagram.com/"><i class="footer--icon fa-brands fa-instagram"></i></a>

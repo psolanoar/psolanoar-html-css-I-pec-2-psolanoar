@@ -42,6 +42,10 @@
   display: $value-flex;
   justify-content: $value-center;
 
+  .header--image--home{
+    margin-left: $value-twelve;
+  }  
+
   .main__home__title--style {
     font-size: $font-size-title;
     text-align: $value-center;
