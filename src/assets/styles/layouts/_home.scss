@@ -7,6 +7,10 @@
 .header {
   padding: $value-one;
 
+  .header__logo--home {
+    margin-left: $value-twelve;
+  }
+
   .header__navigation__menu {
     color: $color-one;
   }
@@ -32,7 +36,7 @@
   
 .main__home { 
   color: $color-three;
-  background-image: url("../images/pexels-aleksandar-pasaric-2078076.jpg");
+  background-image: url("../images/pexels-aleksandar-pasaric-2078076-400w.webp");
   background-size: $value-cover;
   width: $value-auto;
   height: $eight-hundred-px;
@@ -42,7 +46,7 @@
   display: $value-flex;
   justify-content: $value-center;
 
-  .header--image--home{
+  .header--image--home {
     margin-left: $value-twelve;
   }  
 
@@ -51,9 +55,20 @@
     text-align: $value-center;
     padding-top: $value-fifteen;
     color: $color-eight;
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: initial;
+    animation-duration: $value-three-sec;
+    animation-name: $value-slidein;
+    animation-iteration-count: $value-initial;
+  }
+
+  .main__home--animation {
+    clip-path: circle($value-seventy-five);
+    height: $value-thirty-vh;
+    width: $value-seventy-vh;
+    transition: clip-path $value-one-with-five;
+  }
+  
+  .main__home--animation:hover {
+    clip-path: circle($value-five);
   }
 }
 
@@ -84,15 +99,20 @@
   }
 
   .main__container {  
-    display: $value-flex;
-    flex-wrap: $value-wrap;
-    margin: $value-five;
-    padding: $value-zero;
+    line-height: $line-height;
+    text-align: $value-justify;
+    padding-left: $value-ten;
+    padding-right: $value-ten;
+
+    .main__container__list {
+      list-style-type: $value-none;
+      text-decoration: $value-none;
+      padding-bottom: $value-ten;
+    }
 
     .main__container__modul--flex {  
       margin: $value-two;
       padding: $value-zero;
-      width: $value-forty;
 
       .main__container__modul--flex--column  {  
         list-style-type: $value-none;
@@ -100,6 +120,20 @@
         line-height: $line-height;
         text-align: $value-justify;
       }
+    }
+
+    .main__container--animation {
+      width: $three-hundred-fifty-px;
+      height: $value-auto;
+      align-items: $value-center;
+      display: $value-flex;
+      justify-content: $value-center;
+    }
+
+    .main__container--animation:hover {
+      animation-name: rotate;
+      animation-duration: $value-zero-point-nine-sec;
+      animation-iteration-count: $value-ten;
     }
   }
 
@@ -124,6 +158,12 @@
   .main__container--link {
     color: $color-nine;
     text-decoration: $value-none;
+  }
+
+  .main__container--miniature {
+    width: $value-hundred;
+    max-width: $three-hundred-px;
+    height: $value-auto;
   }
 }
 
@@ -158,13 +198,17 @@
   background-color: $color-ten;
 }
 
-iframe, img {
-  max-width: $value-hundred;
-  height: $value-auto;
-}
-
 h2 {
   padding-top: $value-three;
+}
+
+iframe, img {
+  max-width: $value-hundred;
+  min-height: $four-hundred-px;
+  width: $value-hundred;
+  height: $value-auto;
+  margin: $value-zero-number $value-auto;
+
 }
 
 button {
@@ -200,6 +244,10 @@ input {
 
 /* media query for tablets */
 @media (min-width: $tablet-min-devices) and (max-width: $tablet-max-devices) {
+  .main__home { 
+    background-image: url("../images/pexels-aleksandar-pasaric-2078076-480w.webp");
+  }
+
   .home__title--style {
     padding-top: $value-twelve;
   }
@@ -207,6 +255,10 @@ input {
 
 /* media query for desktops */
 @media (min-width: $desktop-min-devices) {
+  .main__home { 
+    background-image: url("../images/pexels-aleksandar-pasaric-2078076-1024w.webp");
+  }
+
   .home__title--style {
     padding-top: $value-ten;
   }
@@ -214,17 +266,7 @@ input {
   .header__navigation__menu--options--option {
     padding: $value-one;
   }
-}
 
-.clip--animation--songs {
-  clip-path: circle($value-seventy-five);
-  height: $value-thirty-vh;
-  width: $value-seventy-vh;
-  transition: clip-path $value-one-with-five;
-}
-
-.clip--animation--songs:hover {
-clip-path: circle($value-five);
 }
 
 @keyframes circle {
@@ -246,5 +288,15 @@ clip-path: circle($value-five);
   to {
     margin-left: $value-zero;
     width: $value-hundred;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate($value-zero-deg);
+  }
+
+  100% {
+    transform: rotate($value-fifteen-deg);
   }
 }

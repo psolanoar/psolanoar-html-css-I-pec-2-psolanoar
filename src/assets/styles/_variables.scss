@@ -1,7 +1,7 @@
 // Responsive measures 
 $tablet-min-devices: 480px;
-$tablet-max-devices: 1024px;
-$desktop-min-devices: 1025px;
+$tablet-max-devices: 1023px;
+$desktop-min-devices: 1024px;
 
 // Colors
 $color-one: #755656;
@@ -45,6 +45,13 @@ $margin-top-footer-rem: 1rem;
 $value-one-with-five: 1.5s;
 $value-thirty-vh: 30vh;
 $value-seventy-vh: 70vh;
+$value-one-fr: 1fr;
+$value-zero-number: 0;
+$value-ten: 10;
+$value-zero-point-nine-sec: 0.9s;
+$value-three-sec: 3s;
+$value-zero-deg: 0deg;
+$value-fifteen-deg: 15deg;
 
 // Variables
 $value-none: none;
@@ -59,12 +66,19 @@ $value-solid: solid;
 $value-wrap: wrap;
 $value-justify: justify;
 $value-fixed: fixed;
+$value-block: block;
+$value-initial: initial;
+$value-slidein: slidein;
 
 // Footer
 $one-half-rem: 1.5rem;
 
 // Pixel values
 $value-thirty-px: 30px;
+$three-hundred-px: 300px;
+$three-hundred-fifty-px: 350px;
+$four-hundred-px: 400px;
+$six-hundred-px: 600px;
 $eight-hundred-px: 800px;
 $hundred-px: 100px;
 

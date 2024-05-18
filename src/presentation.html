@@ -9,11 +9,9 @@
   <body class="main">
     <main>
       <header class="header element--contrast">
-        <picture>
-          <source media="(max-width: 480px)" srcset="./assets/images/logo-50.png" />
-          <source media="(min-width: 481px)" srcset="./assets/images/logo-100.png" />
-          <img src="./assets/images/logo-100.png" alt="Guns N Roses" />
-        </picture>
+        <svg width="150" height="100" xmlns="http://www.w3.org/2000/svg">
+          <image href="./assets/images/logo-150w.png" height="75" width="150" />
+        </svg>
         <nav class="header__navigation__menu">
           <ul class="header__navigation__menu--options">
             <li class="header__navigation__menu--options--option"><a class="header__navigation__menu--options--option--link" href="index.html">Portada</a></li>
@@ -24,10 +22,8 @@
       </header>
 
       <h1 class="main__title--style">Acerca del sitio</h1>
-
       <div class="main__container">
         <div class="main__container__modul--flex">
-          
             <h2>Sobre la banda</h2>
             <article class="main__container__modul--flex--column">
               <p>
@@ -35,6 +31,9 @@
                 Guns N'Roses es una de las bandas que más han marcado el genéro rockero, además han colaborado con otros grandes artistas, como The Rolling Stones o
                 como Bruce Springsteen tal como se menciona en la sección de categorías. 
               </p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="500">
+                <image href="./assets/images/logo-circular-400w.png"  x="30%" y="30" class="main__container--animation" />
+              </svg>
             </article>
 
             <h2>Legado y repercusión mundial</h2>
@@ -54,14 +53,15 @@
               ya que siempre han sido conocidos por su fuerza, rebeldía y actitudes provocativas.
             </p>
           </article>
-
         </div>
 
         <div class="main__container__modul--flex">
           <figure>
             <img
-              src="assets/images/pexels-frandany-17619783.jpg"
-              alt="Fan Gund N'Roses" />
+              srcset="./assets/images/pexels-frandany-17619783-400w.webp 480w, ./assets/images/pexels-frandany-17619783-1024w.webp 1200w"
+              src="./assets/images/pexels-frandany-17619783-400w.webp"
+              alt="Fan Gund N'Roses"
+            />
           
             <figcaption>
               Fandom Guns N' Roses.
@@ -78,7 +78,7 @@
             revivir los mejores momentos de Guns N' Roses y dedicado a los fans del Hard Rock, de manera no oficial.
            </p>
         </div>
-
+        
         <h2 class="main__container--subtitle">Suscríbete a la Newsletter</h2>
         <div class="main__container__frame--one--column">
             <p>Introduce tu correo electrónico para recibir noticias, novedades, o futuros conciertos de Guns N'Roses.</p>
@@ -89,12 +89,10 @@
       </div>
     </main>
     
-    <footer class="footer element--fixed">
-      <picture>
-        <source media="(max-width: 480px)" srcset="./assets/images/logo-50.png" />
-        <source media="(min-width: 481px)" srcset="./assets/images/logo-100.png" />
-        <img src="./assets/images/logo-100.png" alt="Guns N Roses" />
-      </picture>
+    <footer class="footer">
+      <svg width="100" height="50" xmlns="http://www.w3.org/2000/svg">
+        <image href="./assets/images/logo-100w.png" height="50" width="100" />
+      </svg>
       <nav class="header__navigation__menu">
         <div class="header__navigation__menu--options">
           <div class="header__navigation__menu--options--option"><a class="header__navigation__menu--options--option--link footer--link" href="category.html">Categoría</a></div>
