@@ -19,79 +19,74 @@
             <li class="header__navigation__menu--options--option"><a class="header__navigation__menu--options--option--link" href="links.html">Enlaces</a></li>
           </ul>
         </nav>
+        <h1 class="main__title--style">Acerca del sitio</h1>
       </header>
 
-      <h1 class="main__title--style">Acerca del sitio</h1>
       <div class="main__container">
-        <div class="main__container__modul--flex">
+        <div class="main__container--grid">
+          <article class="main__container__modul--column">
             <h2>Sobre la banda</h2>
-            <article class="main__container__modul--flex--column">
-              <p>
-                El grupo fue fundado por el vocalista Axl Rose y el antiguo guitarrista Izzy Stradlin en el año 1985, Los Ángeles, California.
-                Guns N'Roses es una de las bandas que más han marcado el genéro rockero, además han colaborado con otros grandes artistas, como The Rolling Stones o
-                como Bruce Springsteen tal como se menciona en la sección de categorías. 
-              </p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="500">
-                <image href="./assets/images/logo-circular-400w.png"  x="30%" y="30" class="main__container--animation" />
-              </svg>
-            </article>
-
-            <h2>Legado y repercusión mundial</h2>
-            <article class="main__container__modul--flex--column">
-              <p>
-                Las ventas ascienden a más de ciento cincuenta millones de álbumes a nivel mundial, posicionandolos en el puesto 
-                dieciocho de los artistas con más ventas y éxitos. Además, cuatro de sus canciones entraron en la conocida lista de Billboard, 
-                llegando a ser el número uno con el tema Sweet Child o' Mine.
-              </p>
+            <p>
+              El grupo fue fundado por el vocalista Axl Rose y el antiguo guitarrista Izzy Stradlin en el año 1985, Los Ángeles, California.
+              Guns N'Roses es una de las bandas que más han marcado el genéro rockero, además han colaborado con otros grandes artistas, como The Rolling Stones o
+              como Bruce Springsteen tal como se menciona en la sección de categorías. 
+            </p>
           </article>
-
-          <h2>La banda más peligrosa del planeta"</h2>
-          <article class="main__container__modul--flex--column">
+          <div class="main__container__modul--column">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="400">
+              <image href="./assets/images/logo-circular-400w.png"  x="10%" y="20" class="main__container--animation" />
+            </svg>
+          </div>
+          <article class="main__container__modul--column">
+            <h2>Legado y repercusión mundial</h2>
+            <p>
+              Las ventas ascienden a más de ciento cincuenta millones de álbumes a nivel mundial, posicionandolos en el puesto 
+              dieciocho de los artistas con más ventas y éxitos. Además, cuatro de sus canciones entraron en la conocida lista de Billboard, 
+              llegando a ser el número uno con el tema Sweet Child o' Mine.
+            </p>
+          </article>
+          <article class="main__container__modul--column">
+            <h2>La banda más peligrosa del planeta</h2>
             <p>
               La banda tuvo su auge entre 1987 y 1993 donde obtuvieron una gran popularidad. Después de esta época
               triunfal, la banda tuvo algunos conflictos tanto con la opinión pública como con los antiguos miembros,
               ya que siempre han sido conocidos por su fuerza, rebeldía y actitudes provocativas.
             </p>
           </article>
+          <div class="main__container__modul--column">
+            <figure>
+              <img
+                srcset="./assets/images/pexels-frandany-17619783-400w.webp 480w, ./assets/images/pexels-frandany-17619783-1024w.webp 1200w"
+                src="./assets/images/pexels-frandany-17619783-400w.webp"
+                alt="Fan Gund N'Roses"
+              />
+              <figcaption>
+                Fandom Guns N' Roses.
+              </figcaption>
+            </figure>
+          </div>
         </div>
+        <div class="main__container__frame">
+          <h2 class="main__container--subtitle">Sobre nosotros</h2>
+          <div class="main__container__frame--one--column">
+            <p>
+              Este sitio web está creado para recopilar la información más conocida y representativa de la banda, así como para
+              revivir los mejores momentos de Guns N' Roses y dedicado a los fans del Hard Rock, de manera no oficial.
+             </p>
+          </div>
+          <h2 class="main__container--subtitle">Suscríbete a la Newsletter</h2>
+          <div class="main__container__frame--one--column">
+              <p>Introduce tu correo electrónico para recibir noticias, novedades, o futuros conciertos de Guns N'Roses.</p>
+              <input id="email">
+              <button onclick="getNewsletter()">Suscribirse</button>
+              <p id="newsletter"></p>
+          </div>
+      </div>
 
-        <div class="main__container__modul--flex">
-          <figure>
-            <img
-              srcset="./assets/images/pexels-frandany-17619783-400w.webp 480w, ./assets/images/pexels-frandany-17619783-1024w.webp 1200w"
-              src="./assets/images/pexels-frandany-17619783-400w.webp"
-              alt="Fan Gund N'Roses"
-            />
-          
-            <figcaption>
-              Fandom Guns N' Roses.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      
-      <div class="main__container__frame">
-        <h2 class="main__container--subtitle">Sobre nosotros</h2>
-        <div class="main__container__frame--one--column">
-          <p>
-            Este sitio web está creado para recopilar la información más conocida y representativa de la banda, así como para
-            revivir los mejores momentos de Guns N' Roses y dedicado a los fans del Hard Rock, de manera no oficial.
-           </p>
-        </div>
-        
-        <h2 class="main__container--subtitle">Suscríbete a la Newsletter</h2>
-        <div class="main__container__frame--one--column">
-            <p>Introduce tu correo electrónico para recibir noticias, novedades, o futuros conciertos de Guns N'Roses.</p>
-            <input id="email">
-            <button onclick="getNewsletter()">Suscribirse</button>
-            <p id="newsletter"></p>
-        </div>
-      </div>
     </main>
-    
     <footer class="footer">
       <svg width="100" height="50" xmlns="http://www.w3.org/2000/svg">
-        <image href="./assets/images/logo-100w.png" height="50" width="100" />
+        <image href="./assets/images/logo-100w.png" height="50" width="100">
       </svg>
       <nav class="header__navigation__menu">
         <div class="header__navigation__menu--options">
