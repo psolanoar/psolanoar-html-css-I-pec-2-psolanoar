@@ -7,6 +7,10 @@ function getNewsletter() {
   } else {
     send = "Email no apto";
   }
-
   document.getElementById("newsletter").innerHTML = send;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  let sendButton = document.getElementById('button');
+  sendButton.addEventListener('click', getNewsletter);
+});

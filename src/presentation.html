@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>Presentación</title>
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"/>
-    <script src="./functions/main.js"></script>
+    <script src="./functions/main.js" defer></script>
   </head>
   <body class="main">
     <main>
@@ -78,7 +78,7 @@
           <div class="main__container__frame--one--column">
               <p>Introduce tu correo electrónico para recibir noticias, novedades, o futuros conciertos de Guns N'Roses.</p>
               <input id="email">
-              <button onclick="getNewsletter()">Suscribirse</button>
+              <button id="button">Suscribirse</button>
               <p id="newsletter"></p>
           </div>
       </div>
