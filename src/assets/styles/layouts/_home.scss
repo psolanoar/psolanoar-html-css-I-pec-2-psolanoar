@@ -24,7 +24,8 @@
   }
 
   .header__logo--home {
-    margin-left: $value-twelve;
+    margin-left: $value-forty;
+    padding: $value-two;
   }
 
   .header__navigation__menu {
@@ -65,8 +66,8 @@
 
   .main__home--animation {
     clip-path: circle($value-seventy-five);
-    height: $value-thirty-vh;
-    width: $value-seventy-vh;
+    height: $value-ten-vh;
+    width: $value-sixty-vh;
     transition: clip-path $value-one-with-five;
   }
   
@@ -105,6 +106,11 @@
     line-height: $line-height;
     text-align: $value-justify;
     padding: $value-ten;
+
+    .main__container--outstanding__image {
+      width: $value-hundred;
+      height: $value-auto;
+    }
 
     .main__container__list {
       list-style-type: $value-none;
@@ -172,8 +178,8 @@
   margin-top: $margin-top-footer-rem;
   font-size: $font-size-text-footer;
   text-align: $value-center;
-  padding-top: $value-five;
-  padding-bottom: $value-five;
+  padding-top: $value-two;
+  padding-bottom: $value-two;
   background-color: $color-four;
   color: $color-two;
   bottom: $value-zero;
@@ -184,6 +190,10 @@
     text-decoration: $value-none;
     padding: $value-one;
     color: $color-ten;
+  }
+
+  .footer--link:hover {
+    color: $color-six;
   }
 }
 
@@ -316,3 +326,6 @@ input {
     transform: rotate($value-fifteen-deg);
   }
 }
+
+
+
