@@ -74,6 +74,11 @@
   .main__home--animation:hover {
     clip-path: circle($value-five);
   }
+
+  .svg__image--clip-path {
+    width: $four-hundred-px;
+    height: $value-auto;
+  }
 }
 
 .main { 
@@ -244,6 +249,19 @@ input {
   padding: $value-ten;
 }
 
+.svg--animation {
+  animation-duration: 2s;
+  animation-name: slidein;
+
+  .svg--animation--rect {
+    fill: $color-ten;
+  }
+
+  .svg--animation--text {
+    font-size: $font-size-title-svg;
+  }
+ }
+
 /* media query styles adapted for tablets and desktops*/
 @media (min-width: $tablet-min-devices) {
   .navigation__menu--options {
@@ -326,6 +344,3 @@ input {
     transform: rotate($value-fifteen-deg);
   }
 }
-
-
-
