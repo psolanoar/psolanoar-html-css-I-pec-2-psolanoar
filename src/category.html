@@ -2,6 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
+    <meta name="categoria" content="Categoría - Aspectos destacados">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Categoría</title>
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"/>
   </head>
@@ -9,7 +11,7 @@
     <main>
       <header class="header element--contrast">
         <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-          <image href="./assets/images/logo-150w.png" height="50" width="100" />
+          <image href="./assets/images/logo-150w.png"/>
         </svg>
         <nav class="navigation__menu">
           <ul class="navigation__menu--options">
@@ -111,7 +113,7 @@
     </main>
     <footer class="footer">
       <svg width="100" height="50" xmlns="http://www.w3.org/2000/svg">
-        <image href="./assets/images/logo-100w.png" height="50" width="100" />
+        <image href="./assets/images/logo-100w.png"/>
       </svg>
       <nav class="navigation__menu">
         <ul class="navigation__menu--options">
@@ -123,9 +125,15 @@
         </ul>
       </nav>
       <p>Síguenos en 
-        <a class="footer--link" href="https://www.facebook.com/"><i class="footer--icon fa-brands fa-facebook"></i></a>
-        <a class="footer--link" href="https://www.instagram.com/"><i class="footer--icon fa-brands fa-instagram"></i></a>
-        <a class="footer--link" href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+        <a class="footer--link" href="https://www.facebook.com/" aria-label="Icono Facebook">
+          <i class="footer--icon fa-brands fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a class="footer--link" href="https://www.instagram.com/">
+          <i class="footer--icon fa-brands fa-instagram" aria-hidden="true" aria-label="Icono Instagram"></i>
+        </a>
+        <a class="footer--link" href="https://www.tiktok.com/es/">
+          <i class="fa-brands fa-tiktok" aria-hidden="true" aria-label="Icono Tik Tok"></i>
+        </a>
       </p>
       <p>Universitat Oberta de Catalunya ©Copyright 2024 Patricia Solano Arenas</p>
     </footer>
