@@ -27,26 +27,26 @@
     margin-left: $value-forty;
     padding: $value-two;
   }
+}
 
-  .header__navigation__menu {
-    color: $color-one;
-  }
+.navigation__menu {
+  color: $color-one;
 
-  .header__navigation__menu--options {
+  .navigation__menu--options {
     list-style-type: $value-none;
     text-align: $value-center;
   }
 
-  .header__navigation__menu--options--option {
+  .navigation__menu--options--option {
     padding: $value-three;
   }
 
-  .header__navigation__menu--options--option--link {
+  .navigation__menu--options--option--link {
     text-decoration: $value-none;
     color: $color-three;
   }
 
-  .header__navigation__menu--options--option--link:hover {
+  .navigation__menu--options--option--link:hover {
     color: $color-nine;
   }
 }
@@ -174,7 +174,7 @@
   }
 }
 
-.footer {
+.footer, .footer--fixed {
   margin-top: $margin-top-footer-rem;
   font-size: $font-size-text-footer;
   text-align: $value-center;
@@ -197,7 +197,7 @@
   }
 }
 
-.element--fixed {
+.footer--fixed {
   position: $value-fixed;
 }
 
@@ -246,10 +246,10 @@ input {
 
 /* media query styles adapted for tablets and desktops*/
 @media (min-width: $tablet-min-devices) {
-  .header__navigation__menu--options {
+  .navigation__menu--options {
     text-align: $value-center;
 
-    .header__navigation__menu--options--option {
+    .navigation__menu--options--option {
       display: $value-inline;
     }
   }
@@ -285,7 +285,7 @@ input {
     padding-top: $value-ten;
   }
   
-  .header__navigation__menu--options--option {
+  .navigation__menu--options--option {
     padding: $value-one;
   }
 
